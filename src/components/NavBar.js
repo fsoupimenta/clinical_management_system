@@ -1,6 +1,6 @@
-import './css/MainBar.css'
+import './css/NavBar.css'
 
-function MainBar(){
+function NavBar(){
     return(
         <div className="mainbar">
             <h2>Clinical Name</h2>
@@ -8,4 +8,4 @@ function MainBar(){
     )
 }
 
-export default MainBar
+export default NavBar
