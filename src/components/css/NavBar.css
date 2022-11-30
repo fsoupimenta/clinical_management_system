@@ -1,0 +1,13 @@
+.nav-bar-container{
+    background-color: #03bb85;
+    align-content: stretch;
+    max-width: 750px;
+    height: 60px;
+}
+
+.page-title{
+    padding-top: 15px;
+    padding-left: 100px;
+    margin: 0px;
+    text-align: left;
+}

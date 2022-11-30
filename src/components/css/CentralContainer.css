@@ -1,0 +1,21 @@
+.central-container{
+    background-color: white;
+    border-radius: 5px;
+    width: 700px;
+    height: 400px   ;
+    align-items: center;
+    margin: 25px;
+}
+
+.header-central-container{
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.add-patient-button{
+    color: black;
+    padding-left: 20px;
+}
