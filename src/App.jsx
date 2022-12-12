@@ -1,20 +1,19 @@
 import React from 'react';
-import "./App.css"
-import {BrowserRouter, Route, Routes} from 'react-router-dom'
+import 'bootswatch/dist/flatly/bootstrap.css';
+import './components/css/custom.css';
+import 'toastr/build/toastr.min';
+import 'toastr/build/toastr.css';
 
-import Home from './pages/Home'
-import Patient from './pages/Patient';
+import CadastroUsuario from './components/Registration';
 
-const App = () => {
-    return ( 
-      <BrowserRouter>
-          <Routes>
-              <Route path='/' element={<Home />} />
-              <Route path='/Home' element={<Home />} />
-              <Route path='/Patient' element={<Patient />} />
-          </Routes>
-      </BrowserRouter>
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <CadastroUsuario />
+      </div>
     );
+  }
 }
- 
+
 export default App;
