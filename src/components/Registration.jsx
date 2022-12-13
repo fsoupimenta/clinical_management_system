@@ -5,6 +5,8 @@ import Stack from '@mui/material/Stack';
 import Card from './Card';
 import FormGroup from './FormGroup';
 
+import './css/Registration.css';
+
 import { mensagemSucesso } from './Toastr';
 
 class CadastroUsuario extends React.Component {
@@ -41,65 +43,70 @@ class CadastroUsuario extends React.Component {
               <div className='bs-component'>
                 <div className='identificacao'>
                   <h4>Identificação</h4>
-                  <FormGroup label='Nome: *' htmlFor='inputName'>
-                    <input
-                      type='text'
-                      id='inputName'
-                      value={this.state.name}
-                      className='form-control'
-                      name='name'
-                      onChange={(e) => this.setState({ name: e.target.value })}
-                    />
-                  </FormGroup>
-                  <FormGroup label='Dt. Nascimento: *' htmlFor='inputDtNascimento'>
-                    <input
-                      type='date'
-                      id='inputDtNascimento'
-                      value={this.state.dtNascimento}
-                      className='form-control'
-                      name='dtNascimento'
-                      onChange={(e) => this.setState({ dtNascimento: e.target.value })}
-                    />
-                  </FormGroup>
-                  <FormGroup label='N. Prontuario/CRO: *' htmlFor='inputNProntuario'>
-                    <input
-                      type='text'
-                      id='inputNProntuario'
-                      value={this.state.nProntuario}
-                      className='form-control'
-                      name='NProntuario'
-                      onChange={(e) =>
-                        this.setState({ nProntuario: e.target.value })
-                      }
-                    />
-                  </FormGroup>
-                  <FormGroup label='RG: *' htmlFor='inputRG'>
-                    <input
-                      type='text'
-                      id='inputRG'
-                      value={this.state.RG}
-                      className='form-control'
-                      name='RG'
-                      onChange={(e) =>
-                        this.setState({ RG: e.target.value })
-                      }
-                    />
-                  </FormGroup>
-                  <FormGroup label='CPF: *' htmlFor='inputCPF'>
-                    <input
-                      type='text'
-                      id='inputCPF'
-                      value={this.state.CPF}
-                      className='form-control'
-                      name='CPF'
-                      onChange={(e) =>
-                        this.setState({ CPF: e.target.value })
-                      }
-                    />
-                  </FormGroup>
+                  <div className='block-input'>
+                    <FormGroup label='Nome: *' htmlFor='inputName'>
+                      <input
+                        type='text'
+                        id='inputName'
+                        value={this.state.name}
+                        className='form-control'
+                        name='name'
+                        onChange={(e) => this.setState({ name: e.target.value })}
+                      />
+                    </FormGroup>
+                    <FormGroup label='Dt. Nascimento: *' htmlFor='inputDtNascimento'>
+                      <input
+                        type='date'
+                        id='inputDtNascimento'
+                        value={this.state.dtNascimento}
+                        className='form-control'
+                        name='dtNascimento'
+                        onChange={(e) => this.setState({ dtNascimento: e.target.value })}
+                      />
+                    </FormGroup>
+                    <FormGroup label='N. Prontuario/CRO: *' htmlFor='inputNProntuario'>
+                      <input
+                        type='text'
+                        id='inputNProntuario'
+                        value={this.state.nProntuario}
+                        className='form-control'
+                        name='NProntuario'
+                        onChange={(e) =>
+                          this.setState({ nProntuario: e.target.value })
+                        }
+                      />
+                    </FormGroup>
+                    <FormGroup label='RG: *' htmlFor='inputRG'>
+                      <input
+                        type='text'
+                        id='inputRG'
+                        value={this.state.RG}
+                        className='form-control'
+                        name='RG'
+                        onChange={(e) =>
+                          this.setState({ RG: e.target.value })
+                        }
+                      />
+                    </FormGroup>
+                    <FormGroup label='CPF: *' htmlFor='inputCPF'>
+                      <input
+                        type='text'
+                        id='inputCPF'
+                        value={this.state.CPF}
+                        className='form-control'
+                        name='CPF'
+                        onChange={(e) =>
+                          this.setState({ CPF: e.target.value })
+                        }
+                      />
+                    </FormGroup>
+                  </div>
                 </div>
+    
                 <div className='endereco'>
+                
                   <h4>Endereço</h4>
+                <div className='block-input'>       
                   <FormGroup label='CEP: *' htmlFor='inputCEP'>
                     <input
                       type='text'
@@ -185,39 +192,41 @@ class CadastroUsuario extends React.Component {
                     />
                   </FormGroup>
                 </div>
+                </div>
                 <div className='contato'>
                   <h4>Contato</h4>
-                  <FormGroup label='Email: *' htmlFor='inputEmail'>
-                      <input
-                        type='email'
-                        id='inputEmail'
-                        value={this.state.email}
-                        className='form-control'
-                        name='email'
-                        onChange={(e) => this.setState({ email: e.target.value })}
-                      />
-                  </FormGroup>
-                  <FormGroup label='Celular: *' htmlFor='inputCelular'>
-                  <input
-                    type='text'
-                    id='inputCelular'
-                    value={this.state.celular}
-                    className='form-control'
-                    name='celular'
-                    onChange={(e) => this.setState({ celular: e.target.value })}
-                  />
-                  </FormGroup>
-                  <FormGroup label='Telefone: *' htmlFor='inputTelefone'>
+                  <div className='block-input'>       
+                    <FormGroup label='Email: *' htmlFor='inputEmail'>
+                        <input
+                          type='email'
+                          id='inputEmail'
+                          value={this.state.email}
+                          className='form-control'
+                          name='email'
+                          onChange={(e) => this.setState({ email: e.target.value })}
+                        />
+                    </FormGroup>
+                    <FormGroup label='Celular: *' htmlFor='inputCelular'>
                     <input
                       type='text'
-                      id='inputTelefone'
-                      value={this.state.Telefone}
+                      id='inputCelular'
+                      value={this.state.celular}
                       className='form-control'
-                      name='telefone'
-                      onChange={(e) => this.setState({ telefone: e.target.value })}
+                      name='celular'
+                      onChange={(e) => this.setState({ celular: e.target.value })}
                     />
-                  </FormGroup>
-                  
+                    </FormGroup>
+                    <FormGroup label='Telefone: *' htmlFor='inputTelefone'>
+                      <input
+                        type='text'
+                        id='inputTelefone'
+                        value={this.state.Telefone}
+                        className='form-control'
+                        name='telefone'
+                        onChange={(e) => this.setState({ telefone: e.target.value })}
+                      />
+                    </FormGroup>
+                  </div> 
                 </div>  
                 <Stack spacing={1} padding={1} direction='row'>
                   <button
