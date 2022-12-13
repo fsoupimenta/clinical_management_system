@@ -53,7 +53,7 @@ class CadastroUsuario extends React.Component {
                   </FormGroup>
                   <FormGroup label='Dt. Nascimento: *' htmlFor='inputDtNascimento'>
                     <input
-                      type='text'
+                      type='date'
                       id='inputDtNascimento'
                       value={this.state.dtNascimento}
                       className='form-control'
