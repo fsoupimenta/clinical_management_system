@@ -6,6 +6,7 @@ import './App.css'
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
 import Home from './pages/Home'
 import Patient from './pages/Patient'
+import Dentist from './pages/Dentist'
 
 
 class App extends React.Component {
@@ -16,6 +17,7 @@ class App extends React.Component {
               <Route path='/' element={<Home />} />
               <Route path='/Home' element={<Home />} />
               <Route path='/Patient' element={<Patient />} />
+              <Route path='/Dentist' element={<Dentist />} />
           </Routes>
       </BrowserRouter>
     );

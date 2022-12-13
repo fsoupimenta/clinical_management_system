@@ -5,13 +5,13 @@ import SideBar from '../components/SideBar';
 import NavBar from '../components/NavBar';
 import Registration from '../components/Registration'
 
-const Patient = () => {
+const Dentist = () => {
     return ( 
       <>
         <div className='main-container'>
             <SideBar />
             <div className='auxiliar-container'>
-                <NavBar title={"Paciente"} />
+                <NavBar title={"Dentista"} />
                 <div className='central-container'>
                     <div className='header-central-container'>
                           <Registration />
@@ -24,4 +24,4 @@ const Patient = () => {
     );
 }
  
-export default Patient;
+export default Dentist;

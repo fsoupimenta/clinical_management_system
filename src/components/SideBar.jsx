@@ -15,7 +15,9 @@ const SideBar = () => {
                 <Link to={"/Patient"}>
                     <SideBarItem item = "Patient" />
                 </Link>
-                <SideBarItem item = "Dentist" />
+                <Link to={"/Dentist"}>
+                    <SideBarItem item = "Dentist" />
+                </Link>
                 <SideBarItem item = "Schedule" />
                 <SideBarItem item = "Procedure" />
                 <SideBarItem item = "Speciality" />
