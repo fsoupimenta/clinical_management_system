@@ -2,10 +2,10 @@ import React from 'react';
 
 import Stack from '@mui/material/Stack';
 
-import Card from './card';
+import Card from './Card';
 import FormGroup from './FormGroup';
 
-import { mensagemSucesso } from './toastr';
+import { mensagemSucesso } from './Toastr';
 
 class CadastroUsuario extends React.Component {
   state = {
