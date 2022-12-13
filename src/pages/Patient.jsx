@@ -3,16 +3,20 @@ import {} from 'react-router-dom'
 
 import SideBar from '../components/SideBar';
 import NavBar from '../components/NavBar';
-import CentralContainer from '../components/CentralContainer'
+import Registration from '../components/Registration'
 
 const Patient = () => {
     return ( 
       <>
-        <div className='container'>
+        <div className='main-container'>
             <SideBar />
             <div className='auxiliar-container'>
                 <NavBar title={"Patient"} />
-                <CentralContainer button_title={"Patient"}/>
+                <div className='central-container'>
+                    <div className='header-central-container'>
+                          <Registration />
+                    </div>
+                </div>
             </div>
         </div>
       </>      

@@ -8,7 +8,7 @@ import CentralContainer from '../components/CentralContainer'
 const Home = () => {
     return ( 
       <>
-        <div className='container'>
+        <div className='main-container'>
             <SideBar />
             <div className='auxiliar-container'>
                 <NavBar title={"Home"} />

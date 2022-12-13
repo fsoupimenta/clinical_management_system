@@ -1,8 +1,8 @@
 .central-container{
     background-color: white;
     border-radius: 5px;
-    width: 700px;
-    height: 400px   ;
+    width: 95%;
+    height: 80%;
     align-items: center;
     margin: 25px;
 }
