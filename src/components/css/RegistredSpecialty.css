@@ -1,0 +1,19 @@
+input[type=text]{
+    width: 30%;
+}
+
+.block-input{
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+
+}
+.radio{
+    margin-top: 10px;
+
+}
+.radioseparado{
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+}

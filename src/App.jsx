@@ -4,13 +4,13 @@ import './components/css/custom.css';
 import 'toastr/build/toastr.min';
 import 'toastr/build/toastr.css';
 
-import CadastroUsuario from './components/Registration';
+import CadastroEspecialidade from './components/RegisterSpecialty';
 
 class App extends React.Component {
   render() {
     return (
       <div>
-        <CadastroUsuario />
+        <CadastroEspecialidade />
       </div>
     );
   }

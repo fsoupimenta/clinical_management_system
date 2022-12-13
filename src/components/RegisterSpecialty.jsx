@@ -7,9 +7,8 @@ import RadioGroup from '@mui/material/RadioGroup';
 import FormLabel from '@mui/material/FormLabel';
 import Card from './Card';
 import FormGroup from './FormGroup';
-import FormControl from '@mui/material/FormControl';
 
-import './css/Registration.css';
+import './css/RegistredSpecialty.css';
 
 import { mensagemSucesso } from './Toastr';
 import { FormControl } from '@mui/material';
@@ -47,19 +46,26 @@ class CadastroEspecialidade extends React.Component {
                                             onChange={(e) => this.setState({ name: e.target.value })}
                                         />
                                     </FormGroup>
-                                    <FormControll>
-                                        <FormLabel id="demo-controlled-radio-buttons-group">Gender</FormLabel>
-                                        <RadioGroup
-                                            aria-labelledby="demo-controlled-radio-buttons-group"
-                                            name="controlled-radio-buttons-group"
-                                            value={value}
-                                            onChange={handleChange}
-                                        >
-                                            <FormControlLabel value="female" control={<Radio />} label="Female" />
-                                            <FormControlLabel value="male" control={<Radio />} label="Male" />
-                                        </RadioGroup>
-                                    </FormControll>
-                                
+                                    
+                                    <div className='radio'>
+                                        <FormControl>
+                                            <FormLabel id="demo-controlled-radio-buttons-group">Status: *</FormLabel>
+                                            <RadioGroup
+                                                aria-labelledby="demo-controlled-radio-buttons-group"
+                                                name="controlled-radio-buttons-group"
+                                                value={this.state.value}
+                                                onChange={this.state.handleChange}
+                                            >
+
+
+                                                <div className='radioseparado'>
+                                                <FormControlLabel value="Ativo" control={<Radio />} label="Ativo" />
+                                                <FormControlLabel value="Inativo" control={<Radio />} label="Inativo" />
+                                                </div>
+
+                                            </RadioGroup>
+                                        </FormControl>
+                                    </div>
                                 </div>
                                     <Stack spacing={1} padding={1} direction='row'>
                                     <button
